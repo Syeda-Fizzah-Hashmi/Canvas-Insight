@@ -1,0 +1,114 @@
+{% extends "base.html" %} {% block content %}
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="lg-text">About Us</h1>
+                    <p class="image-aboutus-para">TO EMPOWER PEOPLE TO CHANGE THE WAY THEY FEEL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="bread-bar">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+            </ol>
+        </nav>
+    </div>
+    <br>
+    <div class="aboutus-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="strong">Our Vision</h1>
+                    <p class="lead">To be the best provider of<br>easily accessible, evidence-based mental health<br>and well-being support.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Show people new and better ways to deal with mood and anxiety problems.</p>
+                    <p>Link people with mental health professionals or clinical supports.</p>
+                    <p>Practice the safest, most ethical and effective medical care possible for children and their families.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <div class="site-heading text-center">
+                    <h3>Our Qualities</h3>
+                    <div class="border"></div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+                <div class="folded-corner service_tab_1">
+                    <div class="text">
+                        <i class="fa fa-universal-access fa-5x fa-icon-image" aria-hidden="true"></i>
+                            <p class="item-title">
+                                <h3>Ethical</h3>
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+                <div class="text">
+                    <i class="fa fa-handshake-o fa-5x fa-icon-image" aria-hidden="true"></i>
+                        <p class="item-title">
+                            <h3>Collaborative</h3>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+                <div class="folded-corner service_tab_1">
+                    <div class="text">
+                        <i class="fa fa-hand-pointer-o fa-5x fa-icon-image" aria-hidden="true"></i>
+                            <p class="item-title">
+                                <h3>Usability</h3>
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+                <div class="folded-corner service_tab_1">
+                    <div class="text">
+                        <i class="fa fa-refresh fa-5x fa-icon-image" aria-hidden="true"></i>
+                            <p class="item-title">
+                                <h3>Effective</h3>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <div class="site-heading text-center">
+                    <h3>Our Team</h3>
+                    <div class="border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+     -->
+    
+
+
+
+</body>
+{% endblock %}

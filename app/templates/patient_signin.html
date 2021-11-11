@@ -1,0 +1,156 @@
+{% extends "head_only.html" %}
+{% block content %}
+<head>
+<link rel = "icon" href = "/static/styles/logo.png" type = "image/x-icon"> 
+</head>
+<section id="signin" class="sign-in">
+    <div class="container">
+        <div class="signin-content">
+            <div class="signin-image">
+                <figure><img src="/static/styles/logo.png" alt="sing in image"></figure>
+                <a href="/signin" class="signup-image-link" >Sign in with Admin account</a>
+            </div>
+
+            <div class="signin-form">
+                <h2 class="form-title">Patient Sign-In</h2>
+                <form action="" id="patient_login" method="post" enctype="multipart/form-data" novalidate>
+                    <dl>
+                        <div class="form-group">
+                            <p style='padding: 20px'>Name</p>
+                            <input type="text" id="pname" name="pname" value="">
+                        </div>
+                    </dl>
+                    <spam><input type="submit" value="Submit" id='signin_sub' class="form-submit"></spam>
+                </form>                      
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="new_segment" class="sign-in">
+    <div class="container signin">
+        <div class = "row">
+        	<div class= "col-md-7">
+        		<div>
+        			<h4 class="score lightpink">Hello! {{ username }}</h4>
+        			<p>You can’t control what goes on outside, but you can control what goes on inside :)</p>
+        		</div>
+        		<br/><br/><br/>
+                {% if not access %}
+                <table >
+                    {% if requested %}
+                        <tr>
+                            <td><i class="fa fa-file-text" style="font-size: 45px; margin:0 20px; color: lightpink"></i></td>
+                            <td>
+                                Waiting for Psychologists response for report reviewing!
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td><i class="fa fa-file-text" style="font-size: 45px; margin:0 20px; color: lightpink"></i></td>
+                            <td>
+                            <form action="{{ url_for('Request_Reports') }}" method="POST">
+                                 <input type="submit" class="btn btn-secondary  form-submit" value="Request Reports">
+                            </form>
+                            </td>
+                        </tr>
+                    {% endif %}
+
+                </table>
+                {% else %}
+        		<table style="width: 100%;">
+    	      			<tr>
+    	      				<td>
+    	      					<div class="dropdown">
+    							  <button class="btn btn-secondary dropdown-toggle form-submit" type="button" data-toggle="dropdown"><i class="fa fa-home" style="font-size: 35px; margin:0 20px"></i></button>
+    							  <ul class="dropdown-menu">
+    							  	{% for report in reports %}
+    					        	{% if report.category == 'house' %}
+    					        		<li><a href="{{ url_for('report', report_id = report.id) }}">{{ report.timestamp.date() }}</a></li>
+    					        	{% endif %}
+    					        	{% endfor %}
+    							  </ul>
+    							</div>
+    	      				</td>
+    	      				<td>
+    	      					<div class="dropdown ">
+    							  <button class="btn btn-secondary dropdown-toggle form-submit" type="button" data-toggle="dropdown"><i class="fa fa-tree" style="font-size: 35px;margin:0 20px"></i></button>
+    							  <ul class="dropdown-menu">
+    							  	{% for report in reports %}
+    					        	{% if report.category == 'tree' %}
+    					        		<li><a href="{{ url_for('report', report_id = report.id) }}">{{ report.timestamp.date() }}</a></li>
+    					        	{% endif %}
+    					        	{% endfor %}
+    							  </ul>
+    							</div>
+    						</td>
+    	      				<td>
+    	      					<div class="dropdown ">
+    							  <button class="btn btn-secondary dropdown-toggle form-submit" type="button" data-toggle="dropdown"><i class="fa fa-user" style="font-size: 35px;margin:0 20px"></i></button>
+    							  <ul class="dropdown-menu">
+    							  	{% for report in reports %}
+    					        	{% if report.category == 'person' %}
+    					        		<li><a href="{{ url_for('report', report_id = report.id) }}">{{ report.timestamp.date() }}</a></li>
+    					        	{% endif %}
+    					        	{% endfor %}
+    							  </ul>
+    							</div>
+    						</td>
+    	      			</tr>
+    	      		</table>
+                    {% endif %}
+    	      		<br/><br/><br/>
+    	      		<div>
+                        {% if appoint %}
+                            <h4 class="score" style="font-size: 15px">Appointment  <a href="/delete_appointment"><b><i class="fa fa-trash lightpink" aria-hidden="true" style="font-size: 20px"></i></b></a></h4>
+
+                            <table class=" table table-borderless">
+                                <thead class="table-light bg">
+                                    <tr>
+                                      <th scope="col">Psychologist:</th>
+                                      <td scope="col">{{appoint.psychologist}}</td>
+                                    
+                                      <th scope="col">Day:</th>
+                                      <td scope="col" >{{appoint.day}}</td>
+                                    
+                                      <th scope="col">Time:</th>
+                                      <td scope="col">{{appoint.apt_time}}</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                       
+                        {% else %}
+          				  <a href="/appointment"><i class="fa fa-calendar" aria-hidden="true"></i> Set up an Appointment</a>
+                        {% endif %}
+          			</div>
+    	      		
+        	</div>
+        	<div class= "col-md-5">
+        		<figure><img src="https://i.pinimg.com/originals/59/2d/7e/592d7eb9872ba2f469a74db7d6f17447.gif" alt="sing in image"></figure>
+                <a href="/patient_signin" class="signup-image-link form-data"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+        	</div>
+        </div>
+    </div>
+</section>
+
+<style type="text/css">
+        .score{
+            color: grey;
+            font-weight: bold;
+            font-size: 55;
+        }
+        #new_segment{
+            margin: 200px 0px 100px 0px;
+        }
+        #signin{
+            margin: 100px 0px 0px 0px;
+        }
+        a{
+            color:grey;
+        }
+        .bg{background-color: lightgrey;}
+        .lightpink{color:lightpink;}
+</style>
+
+{% endblock %}

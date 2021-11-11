@@ -1,0 +1,130 @@
+{% extends "base.html" %} {% block content %}
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12 ">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 ">
+                    <i class="fa fa-heartbeat"></i>
+                Patients</h4>
+            </div>
+            <div class="modal-body mx-3">
+                <div class='scroll'>
+                    <ul style="list-style-type:none;">
+                    {% for user in users %}
+                    <li><a  href="{{ url_for('user', user_id = user.id) }}">{{ user.username }}</a></li>
+                    {% endfor %}
+                    <ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 container">
+          <div class='row' style='background : gray'> <h4 class="mt-3" style="color: white">My Account@ {{admin}}</h4></div>
+            <!--CARDSSSS-->
+          <div class='row'>
+            <div class='col-sm-4'>
+                <div class="card">
+                    <div class="card-block text-center ">
+                        <h5 class="modal-title w-80 gray">
+                            <i class="fa fa-user-md"></i>
+                        Update patients</h5>
+                    </div>
+                    <div class="card-footer ">
+                        <div class='row text-center'>
+                        <a href="/patient_info" >
+                            <button class="headbtn btn btn btn-secondary btn-sm form-submit"><i class="fa fa-plus-circle" aria-hidden="true" style="color: white;"></i>    Add</button>
+                        </a>
+                        <a href="/delete_patient">
+                            <button class=" headbtn btn btn-secondary btn-sm form-submit"><i class="fa fa-trash" aria-hidden="true" style="color: white;"></i>    Delete</button>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div >
+                    <div class=" text-center ">
+                        <h5 class="modal-title w-80 gray">
+                            <i class="fa fa-pie-chart"></i>
+                        Progress Rate..</h5>
+                        <div class='row'>
+                        <div class="col-sm card round margin">
+                            <div class="card-block">
+                                Total patients
+                            </div>
+                            <div class="card-footer">
+                                <h1 class="total w-100" >{{total_patients}} </h1>
+                            </div>
+                        </div>
+                        <div class="col-sm round card margin">
+                            <div class="card-block">
+                                Total Results
+                            </div>
+                            <div class="card-footer">
+                                <h1 class="total w-100" >{{total_reports}}</h1>
+                            </div>
+                        </div></div>
+                    </div>
+            
+                </div>
+                
+            </div>
+            <div class='col-sm-8 bg_image'>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle form-submit right_place" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Learn more!
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <video width="401" height="225" controls poster="/static/styles/logo.png">
+                            <source src="/static/styles/video.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body-->
+<style type="text/css">
+        a, a:active{color:lightpink;}
+        a:hover, a:visited{color:#A4508B;}
+        .gray{
+            color: rgba(0,0,0,.3);
+        }
+        i{
+            color: pink;
+            font-size:48px;
+        }
+        .bg_image{
+
+            background-image: url('/static/styles/bg.png');
+            height: 350px;
+            background-repeat: no-repeat;
+           
+            background-position:center;
+        }
+        .margin{
+            margin: 5px;
+        }
+        .right_place{
+            float: right;
+            margin-right: 2%;
+        }
+        .round{
+            border-radius: 100px;
+        }
+        .total{
+            color:lightpink;
+            font-size: 60px;
+            font-weight: bold;
+        }
+    </style>
+
+{% endblock %}

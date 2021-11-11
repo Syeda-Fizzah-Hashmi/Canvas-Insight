@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container signin">
+    <h1>{{ username }}</h1>
+
+	<table class=" table table-borderless">
+	  <thead class='thead-light'>
+	    <tr>
+	      <th scope="col">Name</th>
+	      <th scope="col">{{information.patient_name}}</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">Gender</th>
+	      <td>{{information.gender}}</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Last Checkup</th>
+	      <td>{{information.date}}</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Phone #</th>
+	      <td colspan="2">{{information.contact}}</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">City</th>
+	      <td colspan="2">{{information.city}}</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Medical History</th>
+	      <td colspan="2">{{information.history}}</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Medical Reports</th>
+	      <td colspan="2">
+	      	<div>
+		        {% for report in reports %}
+		        <li><a href="{{ url_for('report', report_id = report.id) }}">{{ report.timestamp }}</a></li>
+		        {% endfor %}
+		    </div>
+	      </td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
+
+{% endblock %}

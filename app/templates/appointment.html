@@ -1,0 +1,166 @@
+{% extends "head_only.html" %}
+{% block content %}
+
+<section id="appointment" class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signup-image">
+                        <figure><img src="https://d1vu79bj0i1skj.cloudfront.net/assets/images/connected-care-for-complete-health-02a.gif?v=10.7" alt="image"></figure>
+                    </div>
+                    <div class="signin-form">
+                        <h2 class="form-title top grey">Select Psychologist...</h2>
+                        <form action="#appointment_body" method="post" enctype="multipart/form-data" novalidate>
+                            <dl>
+                                <div class="form-group">
+                                	<div class="form-group bg">
+						                <SELECT name="admin_name" class='dropdown'>
+						                {% for admin in admins %}
+						                  <OPTION value={{admin.psyname}}>{{admin.psyname}}</OPTION>
+						                {% endfor %}
+						                </SELECT>
+						                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+						            </div>
+                                </div>
+                            </dl>
+                            <spam><input type="submit" value="Select" class="form-submit"></spam>
+                        </form>
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+<section id="appointment_body" class="sign-in top">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-form">
+                        <h5 class="form-title">Set Up an Appointment With </h5>
+                        <h2 class="form-title heading" align="center">{{ psychologist }}</h2>
+                        <form action="#appointment_body" method="post" enctype="multipart/form-data" novalidate>
+                            <dl>
+                                <div class="form-group">
+                                    <p style='padding: 20px'>Patient Name</p>
+                                    <input type="text" id="patient_name" name="patient_name" value={{username}} disabled>
+                                </div>
+                                <div class="form-group">
+                                    <p style='padding: 20px'>Date</p>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <div class="form-group" style="overflow: auto;display: block;">
+                                    <p style='padding: 20px'>Select Day & Time</p>
+                                    <table style="width:100%" >
+                                      <tr>
+                                        
+                                        <td>
+                                        <div class="dropdown">
+                                          <input class="btn btn-secondary dropdown-toggle button_format" type="button" name='day' data-toggle="dropdown" value="⦾ Monday" >
+                                            <table name='apt_time'  class="dropdown-menu scrollable-menu">
+                                            {% for avail_time in day_time["Monday"] %}
+                                                <tr class="dropdown-item">
+                                                    <td>
+                                                        <p>
+                                                        {{avail_time}}
+                                                        <input type='radio' name='apt_time' value="Monday {{avail_time}}" id={{avail_time}} >
+                                                        </p>
+                                                    <div class="dropdown-divider"></div>
+                                                    </td>
+                                                </tr>
+
+                                            {% endfor %}
+                                            </table>
+                                        </div>
+
+                                        <div class="dropdown">
+                                          <input class="btn btn-secondary dropdown-toggle button_format" type="button" name='day' data-toggle="dropdown" value="⦾ Tuesday" >
+                                            <table name='apt_time'  class="dropdown-menu scrollable-menu">
+                                            {% for avail_time in day_time["Tuesday"] %}
+                                                <tr class="dropdown-item">
+                                                    <td>
+                                                        <p>
+                                                        {{avail_time}}
+                                                        <input type='radio' name='apt_time' value="Tuesday {{avail_time}}" id={{avail_time}} >
+                                                        </p>
+                                                    <div class="dropdown-divider"></div>
+                                                    </td>
+                                                </tr>
+
+                                            {% endfor %}
+                                            </table>
+                                        </div>
+
+                                        <div class="dropdown">
+                                          <input class="btn btn-secondary dropdown-toggle button_format" type="button" name='day' data-toggle="dropdown" value="⦾ Wednesday" >
+                                            <table name='apt_time'  class="dropdown-menu scrollable-menu">
+                                            {% for avail_time in day_time["Wednesday"] %}
+                                                <tr class="dropdown-item">
+                                                    <td>
+                                                        <p>
+                                                        {{avail_time}}
+                                                        <input type='radio' name='apt_time' value="Wednesday {{avail_time}}" id={{avail_time}} >
+                                                        </p>
+                                                    <div class="dropdown-divider"></div>
+                                                    </td>
+                                                </tr>
+
+                                            {% endfor %}
+                                            </table>
+                                        </div>
+
+                                        <div class="dropdown">
+                                          <input class="btn btn-secondary dropdown-toggle button_format" type="button" name='day' data-toggle="dropdown" value="⦾ Thursday" >
+                                            <table name='apt_time'  class="dropdown-menu scrollable-menu">
+                                            {% for avail_time in day_time["Thursday"] %}
+                                                <tr class="dropdown-item">
+                                                    <td>
+                                                        <p>
+                                                        {{avail_time}}
+                                                        <input type='radio' name='apt_time' value="Thursday {{avail_time}}" id={{avail_time}} >
+                                                        </p>
+                                                    <div class="dropdown-divider"></div>
+                                                    </td>
+                                                </tr>
+
+                                            {% endfor %}
+                                            </table>
+                                        </div>
+
+                                        <div class="dropdown" >
+                                          <input class="btn btn-secondary dropdown-toggle button_format" type="button" name='day' data-toggle="dropdown" value="⦾ Friday" >
+                                            <table name='apt_time'  class="dropdown-menu scrollable-menu">
+                                            {% for avail_time in day_time["Friday"] %}
+                                                <tr class="dropdown-item">
+                                                    <td>
+                                                        <p>
+                                                        {{avail_time}}
+                                                        <input type='radio' name='apt_time' value="Friday {{avail_time}}" id={{avail_time}} >
+                                                        </p>
+                                                    <div class="dropdown-divider"></div>
+                                                    </td>
+                                                </tr>
+
+                                            {% endfor %}
+                                            </table>
+                                        </div>
+
+                                        </td>
+                                       
+                                      </tr>
+                                    </table>
+                                </div>
+                            </dl>
+                            <spam><input type="submit" value="Submit" class="form-submit"></spam>
+                        </form>
+                        <a href="/patient_signin/{{username}}#new_segment" class="form-data"><p><i class="fa fa-times" aria-hidden="true"></i> Cancel</p></a>
+                       
+                    </div>
+                    <div class="signup-image img_pos">
+                        <figure><img src="https://clipartion.com/wp-content/uploads/2015/11/cartoon-stethoscope-microsoft-clipart-free-clip-art-images.png" alt="image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}

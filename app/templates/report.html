@@ -1,0 +1,89 @@
+{% extends "base.html" %} {% block content %}
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway');
+        #body {
+            font-family: Raleway;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            background: #ded5ef;
+            padding: 20px;
+        }
+        
+        #full {
+            border-radius: 25px;
+            background: #da9ed1;
+            padding: 15px;
+            width: 500px;
+            height: 100px;
+        }
+        
+        h2 {
+            text-align: center;
+            font-style: Chalkduster, fantasy;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        
+        #dive {
+            padding-left: 75px;
+        }
+        
+        #traits {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<div class="container">
+    <div id="body">
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <h2 align="middle">USERNAME: {{report.username}}</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <div>
+                                <h2>Predictions:</h2>
+                            </div>
+                            <div id="dive">
+                                <p id="full">Depression Score: {{report.score}}</p>
+                            </div>
+
+                            <h2>Diagnosis: {{report.diagnosis}}</h2>
+                            <div id="dive">
+                                <img src={{report.image_url}} alt={{report.image_filename}} align="middle" class="center" />
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="traits">
+                            <h2>Detected Traits:</h2>
+                            {% for key, value in report.data.items() %}
+
+                            <p>{{key}} : {{value}}</p>
+
+                            {% endfor %}
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

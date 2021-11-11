@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    {% if title %}
+    <title>{{ title }} - Canvas Insight</title>
+    {% else %}
+    <title>Welcome to Canvas Insight</title>
+    {% endif %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Local stylesheet and scripts -->
+    <link rel="stylesheet" href="/static/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles/styles_login.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand">
+            <img src="/static/styles/logo.png" width="75" height="75" class="d-inline-block align-top" alt="Canvas Insight">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a href="{{ url_for('dashboard') }}" class="nav-item nav-link active">Dashboard</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('upload') }}" class="nav-item nav-link active">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('about') }}" class="nav-item nav-link">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% with messages = get_flashed_messages() %} {% if messages %}
+
+        <div class="alert alert-warning">
+        {% for message in messages %}
+          <strong>Notification: </strong> {{ message }}  
+          {% endfor %}
+        </div>
+        
+    {% endif %} {% endwith %} {% block content %}{% endblock %}
+
+
+</body>
+
+</html>

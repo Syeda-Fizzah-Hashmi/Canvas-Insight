@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+    <h1>View Reports for User: {{ username }}</h1>
+    <div>
+        {% for report in reports %}
+        <li><a href="{{ url_for('report', report_id = report.id) }}">{{ report.timestamp }}</a></li>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<style>
+    .dropdown{width:93%;}
+    .bg{background-color: lightgray;}
+</style>
+<section id="signin" class="sign-in">
+            <div class="container" >
+                <div class="signin-content row">
+                    <div class="signin-image col-sm col-md-4">
+                        <figure><img src="https://cdn.dribbble.com/users/1914549/screenshots/5346994/day21.gif" alt="Delete XD image" ></figure>
+                    </div>
+
+                    <div class="signin-form col-sm col-md-4">
+                        <h3 class="form-title">Delete a patient</h3>
+                        <form action="" method="post" enctype="multipart/form-data" novalidate>
+                            {{ form.csrf_token }}
+                            <dl>
+                                <div class="form-group bg">
+                                    <SELECT name="patient" class='dropdown'>
+                                    {% for patient in patients %}
+                                      <OPTION value={{patient}}>{{patient}}</OPTION>
+                                    {% endfor %}
+                                    </SELECT>
+                                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                </div>
+                            </dl>
+                            <spam>{{ form.submit(class_ ="form-submit") }}</spam>
+                        </form>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}

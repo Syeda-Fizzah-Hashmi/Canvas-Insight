@@ -1,0 +1,56 @@
+{% extends "base.html" %} 
+
+
+{% block content %}
+
+<style>
+    .dropdown{width:95%;}
+    .bg{background-color: lightgray;}
+</style>
+
+<div class="container signup">
+    <div class="signup-form">
+    <h1>Upload Drawing</h1>
+    Patient Name:
+        <form action="" method="post" enctype="multipart/form-data" novalidate>
+            {{ form.hidden_tag() }}
+            <div class="form-group bg">
+                <SELECT name="patient" class='dropdown'>
+                {% for patient in patients %}
+                  <OPTION value={{patient}}>{{patient}}</OPTION>
+                {% endfor %}
+                </SELECT>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </div>
+            <div class="form-group">
+
+                <p>Please select your test category:</p>
+                <table style="width:100%" >
+                  <tr class=' text-center'>
+                    <td>House</td>
+                    <td>Tree</td>
+                    <td>Person</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" id="house" name="category" value="house"></td>
+                    <td><input type="radio" id="tree" name="category" value="tree"></td>
+                    <td><input type="radio" id="person" name="category" value="person"></td>
+                  </tr>
+                </table>
+            </div>
+            <!--div class="form-group">
+                <p style='padding: 20px'>{{ form.username.label }}</p>
+                {{ form.username(size=12) }}
+            </div-->
+            <div class="form-group">
+                {{ form.image(class_='bg') }}
+            </div>
+            <div class="form-group">
+                <p style='padding: 20px'>{{ form.submit(class_ ="form-submit")  }}</p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

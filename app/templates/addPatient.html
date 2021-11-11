@@ -1,0 +1,70 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+	p{padding-bottom: 50px;}
+	.dropdown{width:95%;}
+	.bg{background-color: lightgray;}
+	.form-group{
+	  margin-bottom: 0px;
+	}
+	
+	</style>
+</head>
+<section id="patient" class="signup" >
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+						<h4>Enter Patient Details</h4>
+						<br>
+						<form action="" method="post" enctype="multipart/form-data" novalidate>
+							{{ form.csrf_token }}
+							<dl>
+								<div class="form-group">
+									<p >{{ form.patient_name.label }}</p>
+									{{ form.patient_name(size=32)|safe  }}
+								</div>
+								<div class="form-group">
+									<p>{{ form.gender.label }}</p>
+									<br/>
+									<div class='bg'>{{form.gender(class_='dropdown')}}<i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+									
+								</div>
+								<div class="form-group">
+									<p >{{ form.date.label }}</p>
+									{{ form.date(size=32) }}
+								</div>
+								<div class="form-group">
+									<p >{{ form.contact.label }}</p>
+									{{ form.contact(size=32) }}
+								</div>
+								<div class="form-group">
+									<p>{{ form.city.label }}</p>
+									<br/><div class='bg'>{{ form.city(class_='dropdown') }}<i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+								</div>
+								<div class="form-group">
+									<p style='padding:50;'>{{ form.history.label }}</p>
+									{{ form.history }}
+								</div>
+							</dl>
+							<spam>{{ form.submit(class_ ="form-submit") }}</spam>
+						</form>
+					</div>	
+					<div class="signup-image">
+                        <figure><img class='questionmark' src="https://media2.giphy.com/media/1fm964SLnrY26wSD53/giphy.gif" alt=""></figure>
+                    </div>
+				</div>
+			</div>
+</section>
+
+
+
+{% endblock %}
+
+
+
+

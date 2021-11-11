@@ -1,0 +1,14 @@
+big_house
+bottom_placed_house
+chimney
+closed_window
+clouds
+door
+open_window
+roof
+shaded_roof
+shadow
+single_line_roof
+small_house
+smoking_chimney
+wall

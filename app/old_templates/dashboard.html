@@ -1,0 +1,226 @@
+{% extends "base.html" %} {% block content %}
+
+
+<!-- <div class="container">
+    <h1>View Users</h1>
+    <div>
+        {% for user in users %}
+        <li><a href="{{ url_for('user', user_id = user.id) }}">{{ user.username }}</a></li>
+        {% endfor %}
+    </div>
+</div> -->
+
+<head>
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal fade" id="patientForm" name="patientForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Enter Patient Details</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <form class="needs-validation" name="form" method="" action="" novalidate>
+                        <div class="md-form mb-4">
+                            <i class="fa fa-id-badge" aria-hidden="true"></i>
+                            <input type="number" id="id" class="form-control validate" name="id" value="id" min="1" placeholder="Patient ID" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="fname" class="form-control validate" name="fname" placeholder="First Name" pattern="[A-Za-z]{1,20}" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="lname" class="form-control validate" name="lname" placeholder="Last Name" pattern="[A-Za-z]{1,20}" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fa fa-venus-mars" aria-hidden="true"> Please select the patient's gender:</i>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="defaultUnchecked male" name="gender" value="male" checked>
+                                <label class="custom-control-label" for="defaultUnchecked male">Male</label>
+                            </div>
+
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="defaultUnchecked female" name="gender" value="female">
+                                <label class="custom-control-label" for="defaultUnchecked female">Female</label>
+                            </div>
+
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="defaultUnchecked other" name="gender" value="other">
+                                <label class="custom-control-label" for="defaultUnchecked other">Other</label>
+                            </div>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <input type="date" id="dob" class="form-control" placeholder="Date of Birth" required>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <input type="tel" id="contact" class="form-control validate" placeholder="Contact Number e.g. 03xx-xxxx-xxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}" required>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                            <input type="text" id="city" class="form-control validate" placeholder="City of Residence" pattern="[A-Za-z]{1,50}" required>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix"></i>
+                                <textarea id="form10 history" class="md-textarea form-control validate" rows="3" maxlength="300" placeholder="History Details (300 characters)" required></textarea>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="viewForm" name="patientForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">View Patients</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div>
+                        {% for user in users %}
+                        <li><a href="{{ url_for('user', user_id = user.id) }}">{{ user.username }}</a></li>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="lg-text">A.I TO MAKE YOU SMILE</h1>
+                    <br><br>
+                    <section class="banner-sec">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title mt-3" style="color: black;">Add Patient</h4>
+                                        <div class="card-text">
+                                            Enter the patient's information to create their entry in the database.
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="" data-toggle="modal" data-target="#patientForm">
+                                            <button class="headbtn btn btn btn-secondary btn-sm"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title mt-3" style="color: black;">View Patient</h4>
+                                        <div class="card-text">
+                                            View existing patient information in the database.
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="" data-toggle="modal" data-target="#viewForm">
+                                            <button class="headbtn btn btn-secondary btn-sm"><i class="fa fa-eye" aria-hidden="true"></i>    View</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-md-3">
+                                <div class="card h-100">
+                                    <div class="card-block">
+                                        <h4 class="card-title mt-3" style="color: black;">Delete Patient</h4>
+                                        <div class="card-text">
+                                            Delete an existing patient and their information from the database.
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="">
+                                            <button class=" headbtn btn btn-secondary btn-sm"><i class="fa fa-trash" aria-hidden="true"></i>    Delete</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <h4 class="card-title mt-3" style="color: black;">Pending Patients</h4>
+                                        <div class="card-text">
+                                            View pending patient requests.
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="">
+                                            <button class="headbtn btn btn-secondary btn-sm"><i class="fa fa-trash" aria-hidden="true"></i>    View</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bread-bar">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+            </ol>
+        </nav>
+    </div>
+
+</body>
+
+<script>
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+{% endblock %}
