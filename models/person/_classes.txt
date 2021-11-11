@@ -1,0 +1,16 @@
+closed_eye
+cupid_mouth
+ear
+empty_eye
+eye
+eyebrow
+face
+frowning_eyebrow
+large_ear
+large_nose
+line_unsmiling_mouth
+mouth
+nose
+open_mouth
+pointy_nose
+small_eye
