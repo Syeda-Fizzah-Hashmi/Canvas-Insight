@@ -1,0 +1,201 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:1-36:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\95d04a55d1fa13e0d4ee02cf8a9fc8f0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\1df6d336d7fa6ea97ccb014e349a0f56\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.yukuku:ambilwarna:2.0.1] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\5fd86d9c14cb5bdb49d16e0e40056911\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\da49b534cd13138836014f23c15eecb4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\7d4e223d7483aeef93b187b6038b92cf\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a3ac107de64a1b418d82c715da926596\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\238cf41f7f39f91280e083dfea278b4d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\94bc93ff8a73204c07a75f6c373ba96c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\1ef36aff13f9d3509b4a0e11025ba204\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\e954d1b21d49dc943a720e68fb8e6b47\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\c990b64eb39e75f93e85d44c681d30ac\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\f049ec9cc21832b791d910b6739a2d5f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\46e771abbea1e5cf65a99353ec2b854c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\f118fff051d08195ab1f1e52cd82b8b4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\c88435c390e73e5371696469057c5fc6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\62df28361b6df2669fc188a89d3743d4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a4102f5a2993db6e7c4a4ca249ab5652\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\0ba82ac760059f2bcb8b4f4da0f7e44a\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\aa9a6d2936aac10c682039ffcccba43b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a06df73fa769205d56b4a018c2f55f4d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\91df3e5946140475c1af0d7acf8a6c8c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\179e2653fd29aa8eadc0a08e029a110e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a3116afca40fa15c906dbe6bda0a0ab6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\adf67758dbc1089e96bada93a75543b0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\5937c35544783dcd04372c0109af9c51\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\651da36a6fb3bbe2594239b09a87cef2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\3f5bb0a93b9057bfd36ed48c2a382046\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\449fa0a303716aa7a29426f99fd6a178\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:1-36:12
+	package
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:1-36:12
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:1-36:12
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:7:22-64
+application
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:9:5-34:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\1df6d336d7fa6ea97ccb014e349a0f56\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\1df6d336d7fa6ea97ccb014e349a0f56\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a4102f5a2993db6e7c4a4ca249ab5652\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a4102f5a2993db6e7c4a4ca249ab5652\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\0ba82ac760059f2bcb8b4f4da0f7e44a\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\0ba82ac760059f2bcb8b4f4da0f7e44a\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a4102f5a2993db6e7c4a4ca249ab5652\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.example.paint.MainActivity
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:16:9-17:20
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:16:19-47
+activity#com.example.paint.Q8
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:18:9-40
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:18:19-37
+activity#com.example.paint.Q7
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:19:9-40
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:19:19-37
+activity#com.example.paint.Q6
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:20:9-40
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:20:19-37
+activity#com.example.paint.Q5
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:21:9-40
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:21:19-37
+activity#com.example.paint.Q4
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:22:9-40
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:22:19-37
+activity#com.example.paint.Q2
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:23:9-40
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:23:19-37
+activity#com.example.paint.Q1
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:24:9-30:20
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:24:19-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:28:27-74
+activity#com.example.paint.Q3
+ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:31:9-40
+	android:name
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml:31:19-37
+uses-sdk
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\95d04a55d1fa13e0d4ee02cf8a9fc8f0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\95d04a55d1fa13e0d4ee02cf8a9fc8f0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\1df6d336d7fa6ea97ccb014e349a0f56\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\1df6d336d7fa6ea97ccb014e349a0f56\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.yukuku:ambilwarna:2.0.1] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\5fd86d9c14cb5bdb49d16e0e40056911\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.yukuku:ambilwarna:2.0.1] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\5fd86d9c14cb5bdb49d16e0e40056911\AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\da49b534cd13138836014f23c15eecb4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\da49b534cd13138836014f23c15eecb4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\7d4e223d7483aeef93b187b6038b92cf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\7d4e223d7483aeef93b187b6038b92cf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a3ac107de64a1b418d82c715da926596\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a3ac107de64a1b418d82c715da926596\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\238cf41f7f39f91280e083dfea278b4d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\238cf41f7f39f91280e083dfea278b4d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\94bc93ff8a73204c07a75f6c373ba96c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\94bc93ff8a73204c07a75f6c373ba96c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\1ef36aff13f9d3509b4a0e11025ba204\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\1ef36aff13f9d3509b4a0e11025ba204\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\e954d1b21d49dc943a720e68fb8e6b47\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\e954d1b21d49dc943a720e68fb8e6b47\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\c990b64eb39e75f93e85d44c681d30ac\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\c990b64eb39e75f93e85d44c681d30ac\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\f049ec9cc21832b791d910b6739a2d5f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\f049ec9cc21832b791d910b6739a2d5f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\46e771abbea1e5cf65a99353ec2b854c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\46e771abbea1e5cf65a99353ec2b854c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\f118fff051d08195ab1f1e52cd82b8b4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\f118fff051d08195ab1f1e52cd82b8b4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\c88435c390e73e5371696469057c5fc6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\c88435c390e73e5371696469057c5fc6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\62df28361b6df2669fc188a89d3743d4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\62df28361b6df2669fc188a89d3743d4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a4102f5a2993db6e7c4a4ca249ab5652\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a4102f5a2993db6e7c4a4ca249ab5652\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\0ba82ac760059f2bcb8b4f4da0f7e44a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\0ba82ac760059f2bcb8b4f4da0f7e44a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\aa9a6d2936aac10c682039ffcccba43b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\aa9a6d2936aac10c682039ffcccba43b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a06df73fa769205d56b4a018c2f55f4d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a06df73fa769205d56b4a018c2f55f4d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\91df3e5946140475c1af0d7acf8a6c8c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\91df3e5946140475c1af0d7acf8a6c8c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\179e2653fd29aa8eadc0a08e029a110e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\179e2653fd29aa8eadc0a08e029a110e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a3116afca40fa15c906dbe6bda0a0ab6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\a3116afca40fa15c906dbe6bda0a0ab6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\adf67758dbc1089e96bada93a75543b0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\adf67758dbc1089e96bada93a75543b0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\5937c35544783dcd04372c0109af9c51\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\5937c35544783dcd04372c0109af9c51\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\651da36a6fb3bbe2594239b09a87cef2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\651da36a6fb3bbe2594239b09a87cef2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\3f5bb0a93b9057bfd36ed48c2a382046\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\3f5bb0a93b9057bfd36ed48c2a382046\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\449fa0a303716aa7a29426f99fd6a178\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ammara\.gradle\caches\transforms-2\files-2.1\449fa0a303716aa7a29426f99fd6a178\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ammara\Desktop\CanvasInsight-master\CanvasInsight-master\Paint-master1\app\src\main\AndroidManifest.xml
