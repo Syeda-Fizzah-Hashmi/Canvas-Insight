@@ -1,3 +1,7 @@
+Download trained models from https://drive.google.com/drive/folders/1J15fB62s2kWDyzfAPfMhyOMPWGTthHJ2?usp=sharing
+    * Place these models inside /models and their respective folders 
+    * Remane all of them to "Yolov4_epoch50" (remove house/tree/person inside parenthesis)
+
 Follow these steps (assuming u have python 3+ 64-bit installed and are on Windows):
 
 Open terminal. (I've been using Visual Code cmd)
